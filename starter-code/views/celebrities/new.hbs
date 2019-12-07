@@ -1,0 +1,23 @@
+<form action="/celebrities/new" method="POST"> 
+{{!action - là où ça doit aller quand l'utilisateur clique sur submmit et method }}
+  <label>
+    Name:
+    <input type="text" name="name"> {{! titre du livre doit correspondre à la base de données / required validation cote cient}}
+  </label>
+ {{!entourer la balise input d'un label du coup pas besoin d'id }}
+
+    <label>
+    Occupation:
+    <input type="text" name="occupation"> {{! titre du livre doit correspondre à la base de données}}
+    </label>
+
+    <label>
+    Catch Phrase:
+    <input type="text" name="catchPhrase"> {{!titre du livre doit correspondre à la base de données}}
+    </label>
+
+  <button type="submit"> CREER </button>
+  {{!bouton de soumission }}
+</form>
+
+<a href='/celebrities'>RETURN TO HOMEPAGE</a>
